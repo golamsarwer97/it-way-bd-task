@@ -120,7 +120,6 @@ class _TaskAddPageState extends State<TaskAddPage> {
       floatingActionButton: BlocListener<TaskAddCubit, TaskAddState>(
         listener: (context, state) {
           if (state is TaskAddSuccess) {
-            // final responseModel = state.taskUpdateStatusResponse;
             Navigator.pushAndRemoveUntil(
               context,
               MaterialPageRoute(builder: (context) => const TaskListPage()),
